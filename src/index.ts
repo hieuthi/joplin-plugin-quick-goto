@@ -49,7 +49,7 @@ joplin.plugins.register({
 				},
 			});
 
-    		let cmdJName  = 'gotoGItem' + i;
+    		let cmdJName  = 'gotoJItem' + i;
     		let cmdJLabel = 'Goto';
     		let cmdJKeys  = 'CmdOrCtrl+' + i;
 
@@ -98,7 +98,7 @@ joplin.plugins.register({
     		menuAItems.push({commandName: cmdAName})    	
     	}
 
-		await joplin.views.menus.create('quickGotoGMenu', 'Quick Goto', menuJItems, MenuItemLocation.Tools);
+		await joplin.views.menus.create('quickGotoJMenu', 'Quick Goto', menuJItems, MenuItemLocation.Tools);
 		await joplin.views.menus.create('quickGotoAMenu', 'Quick Goto - Assign', menuAItems, MenuItemLocation.Tools);
 	},
 });
